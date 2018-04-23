@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block head %}
+    <link href="{{ url_for('static',filename = "Main/vendor/bootstrap-social/bootstrap-social.css")}}" rel="stylesheet">
+{% endblock %}
+{% block body %}
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">文件上传</h1>
+        </div>
+    </div>
+    <div class="col-lg-12" style="padding-right: 120px">
+        <div class="panel panel-default">
+            <div class="panel-heading" style="font-size: 18px">
+                请提交文件到对应的模块中
+            </div>
+            <div class="panel-body" >
+                <a class="btn btn-block btn-social btn-bitbucket" style="font-size: 20px">
+                    <i class="fa fa-bitbucket"></i> Sign in with Bitbucket
+                    <input type="file">
+                </a>
+                <a class="btn btn-block btn-social btn-dropbox" style="font-size: 20px">
+                    <i class="fa fa-dropbox" ></i> Sign in with Dropbox
+                    <input type="file">
+                </a>
+                <a class="btn btn-block btn-social btn-facebook" style="font-size: 20px">
+                    <i class="fa fa-facebook"></i> Sign in with Facebook
+                    <input type="file">
+                </a>
+                <a class="btn btn-block btn-social btn-github" style="font-size: 20px">
+                    <i class="fa fa-github" ></i> Sign in with GitHub
+                    <input type="file">
+                </a>
+                <a class="btn btn-block btn-social btn-google-plus" style="font-size: 20px">
+                    <i class="fa fa-google-plus" ></i> Sign in with Google
+                    <input type="file">
+                </a>
+                <a class="btn btn-block btn-social btn-instagram" style="font-size: 20px">
+                    <i class="fa fa-instagram" ></i> Sign in with Instagram
+                    <input type="file">
+                </a>
+                <a class="btn btn-block btn-social btn-linkedin" style="font-size: 20px">
+                    <i class="fa fa-linkedin" ></i> Sign in with LinkedIn
+                    <input type="file">
+                </a>
+                <a class="btn btn-block btn-social btn-pinterest" style="font-size: 20px">
+                    <i class="fa fa-pinterest" ></i> Sign in with Pinterest
+                    <input type="file">
+                </a>
+                <a class="btn btn-block btn-social btn-tumblr" style="font-size: 20px">
+                    <i class="fa fa-tumblr" ></i> Sign in with Tumblr
+                    <input type="file">
+                </a>
+                <a class="btn btn-block btn-social btn-twitter" style="font-size: 20px">
+                    <i class="fa fa-twitter" ></i> Sign in with Twitter
+                    <input type="file">
+                </a>
+                <a class="btn btn-block btn-social btn-vk" style="font-size: 20px">
+                    <i class="fa fa-vk" ></i> Sign in with VK
+                    <input type="file">
+                </a>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="{{ url_for('static',filename = "Main/vendor/jquery/jquery.min.js")}}"></script>
+    <script src="{{ url_for('static',filename = "Main/vendor/bootstrap/js/bootstrap.min.js")}}"></script>
+    <script src="{{ url_for('static',filename = "Main/vendor/metisMenu/metisMenu.min.js")}}"></script>
+    <script src="{{ url_for('static',filename = "Main/dist/js/sb-admin-2.js")}}"></script>
+{% endblock %}
